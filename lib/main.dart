@@ -9,6 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.teal[200],
         body: SafeArea(
@@ -52,17 +53,14 @@ class MyApp extends StatelessWidget {
                     color: Colors.white,
                     size: 24.0,
                   ),
-                  title: Padding(
-                    padding: const EdgeInsets.only(left: 18.0),
-                    child: Text(
-                      '+33 6 20 18 95 78',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontFamily: 'Source-Sans-Pro-Light',
-                        fontSize: 20.0,
-                        fontWeight: FontWeight.w600,
-                        letterSpacing: 2.5,
-                      ),
+                  title: Text(
+                    '+ 33 6 20 18 95 78',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: 'Source-Sans-Pro-Light',
+                      fontSize: 15.0,
+                      fontWeight: FontWeight.w600,
+                      letterSpacing: 2.5,
                     ),
                   ),
                 ),
@@ -76,17 +74,14 @@ class MyApp extends StatelessWidget {
                     color: Colors.white,
                     size: 24.0,
                   ),
-                  title: Padding(
-                    padding: const EdgeInsets.only(left: 4.0),
-                    child: Text(
-                      'wern.dev@gmail.com',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontFamily: 'Source-Sans-Pro-Light',
-                        fontSize: 20.0,
-                        fontWeight: FontWeight.w600,
-                        letterSpacing: 2.5,
-                      ),
+                  title: Text(
+                    'wern.dev@gmail.com',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: 'Source-Sans-Pro-Light',
+                      fontSize: 15.0,
+                      fontWeight: FontWeight.w600,
+                      letterSpacing: 2.5,
                     ),
                   ),
                 ),
